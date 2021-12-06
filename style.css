@@ -1,7 +1,6 @@
 li {
   list-style: none;
 }
-body {
-  color: cyan;
+.top{
   background: url(./img/bg.jpg) center/cover fixed;
 }
