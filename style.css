@@ -1,88 +1,72 @@
 @font-face {
   font-family: "font1";
-  src: url(./fonts/Montserrat-Medium.ttf);
-}
+  src: url(./fonts/Montserrat-Medium.ttf);}
 @font-face {
   font-family: "font2";
-  src: url(./fonts/Montserrat-Thin.ttf);
-}
+  src: url(./fonts/Montserrat-Thin.ttf);}
 * {
   margin: 0;
   padding: 0;
-}
+  box-sizing: border-box;}
 body {
-  font-family: "font1", sans-serif;
-}
+  font-family: "font1", sans-serif;}
 li {
-  list-style: none;
-}
+  list-style: none;}
 .top {
-  background: url(./img/bg.jpg) center/cover fixed;
-}
+  background: url(./img/bg.jpg) center/cover fixed;}
 nav ul {
   display: flex;
   justify-content: space-around;
-  margin: 0px 10%;
-}
+  margin: 0px 10%;}
 nav a {
   color: black;
   text-decoration: none;
-  padding: 10px 2.15%;
-}
+  padding: 10px 2.15%;}
 nav a:hover {
-  color: #6920b2;
-}
+  color: #6920b2;}
 nav li {
   text-transform: uppercase;
-  font-size: 0.75rem;
-}
+  font-size: 0.75rem;}
 .a-last {
   padding: 0;
-  margin: 0;
-}
+  margin: 0;}
 .last {
   display: flex;
   margin: 8px 0;
   padding: 3px 3px;
   background: #e0e0e0;
   border-radius: 20px;
-  font-size: 0.75rem;
-}
+  font-size: 0.75rem;}
 .last:hover {
   color: #6920b2;
   background: rgb(142, 141, 141) 0;
-  transition: 0.3s;
-}
+  transition: 0.3s;}
 .last:hover .fr{
   border-right: 2px solid white;
-  transition: 0.3s;
-}
+  transition: 0.3s;}
 .fr {
   padding: 0 10px;
   margin: 0;
-  border-right: 2px solid black;
-}
+  border-right: 2px solid black;}
 .en {
-  padding: 0 10px;
-}
+  padding: 0 10px;}
 .top {
   padding: 50px 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
+  justify-content: center;}
 .top img{
   width: 40%;
-  margin: 0 auto;
-}
+  margin: 0 auto;}
 .top h1{
   color: white;
   margin: 30px auto;
   font-family: "font2",sans-serif;
   font-size: 1.75rem;
   letter-spacing: 1px;
-  text-transform: uppercase;
-}
+  text-transform: uppercase;}
+.top .fas{
+  padding: 0 0 0 20px;}
 .button-1{
   margin: 0 auto;
   background: rgba(0, 0, 0, 0);
@@ -91,20 +75,16 @@ nav li {
   font-size: 1.25rem;
   padding:10px 5%;
   border: 1px solid white;
-  text-decoration: none;
-}
+  text-decoration: none;}
 .fas .fa-chevron-right {
   font-size: 0.9rem;
-  letter-spacing: 10px;
-}
+  letter-spacing: 10px;}
 .button-1:hover {
-  background:rgba(255, 255, 255, 0.306);
-}
+  background:rgba(255, 255, 255, 0.306);}
 .head-1{
   height: 30px;
   padding: 20px 15%; 
-  text-align: center;
-}
+  text-align: center;}
 .section1{
   background: black;
   color:white;
@@ -112,33 +92,98 @@ nav li {
   padding: 0 20% 30px 20%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-}
+  align-items: center;}
+.under-section1 img{
+  max-width: 100%;}
 .under-section1{
   width: 25%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-.under-section1 img{
+  justify-content: center;}
+.under-section1 div{
   padding: 25px 0;
-}
+  display:block;
+  margin: 0 auto;}
 .under-section1 h3{
   text-align: center;
   text-transform: uppercase;
   padding: 25px 0 10px 0;
-  font-size: 1rem;
-}
+  font-size: 1rem;}
 .under-section1 p{
   padding: 0 0 25px 0;
   font-size: 0.75rem;
   font-family: "font2";
-  text-align: center;
-}
+  text-align: center;}
+.under-section1 .button-1 {
+  padding:10px 30px;}
+.under-section1 .button-1 div {
+  padding: 0;
+  font-size: 0.75rem;}
+.color3{
+    background: #f7f7f7;
+    padding: 0 0 20px 0;}
 .section2{
-  background: #f7f7f7;
+  padding: 50px 10%;
   display: flex;
-}
+  justify-content: space-between;}
+.section2 h2 {
+  text-transform: uppercase;}
+.section2 a {
+  text-decoration: none;
+  border: black 1px solid;
+  max-height: 30px;}
+.section2 a div {
+  padding: 5px 10px;
+  text-transform: uppercase;
+  color: black;
+  font-size: 0.75rem;
+  font-weight: bold;}
+.section2 a div .fas{
+  padding: 0 0 0 10px;}
+.section2 a:hover{
+  background: rgb(207, 207, 207);}
+.usection2{
+  display: flex;
+  justify-content: space-between;  
+  margin: 0px 10%;}
+.unders2{
+  max-width: 255px;
+  position:relative;
+  padding: 0 0 50px 0;}
+.unders2 h4{
+padding: 10px 0;}
+.unders2 p{
+  font-size: 0.75rem;}
+.unders2 a{
+  position: absolute;
+  font-size: 0.90rem;
+  bottom: 0px;
+  text-decoration: none;
+  color: #6920b2;}
+.unders2 a .fas{
+  font-size: 0.5rem;
+  padding: 3px 10px;}
+.unders2 a:hover{
+  color: white;
+  background: #6920b2;}
 footer{
-  background: #ffff;
-}
+  background: #ffff;}
+.top-footer {
+  margin: 40px 10%;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;}
+.utop-footer h5{
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0 0 20px 0;}
+.flex{
+  display:flex;}
+.utop-footer {
+  max-width: 25%;}
+.utop-footer a{
+  text-decoration: none;
+  color: #6920b2;
+  font-size: 0.75rem;}
+.utop-footer a div{
+margin: 10px 0;}
