@@ -242,6 +242,9 @@ footer{
 .utop-footer {
   max-width: 25%;
 }
+.imgfooter {
+  max-width: 100%;
+}
 .utop-footer h5{
   font-size: 1rem;
   text-transform: uppercase;
