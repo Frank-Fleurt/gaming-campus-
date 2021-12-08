@@ -29,7 +29,7 @@ nav ul {
 nav a {
   color: black;
   text-decoration: none;
-  padding: 10px 2.15%;
+  padding: 10px 0;
 }
 nav a:hover {
   color: #6920b2;
@@ -108,13 +108,10 @@ nav li {
   background:rgba(255, 255, 255, 0.306);
 }
 .head-1{
-  height: 80px;
-  padding: 20px 15%; 
+  margin: 20px 15%; 
   text-align: center;
 }
-.head-1 p{
-    padding: 0 0 10px 0;
-  }
+
 .section1{
   background: black;
   color:white;
@@ -128,7 +125,7 @@ nav li {
   max-width: 100%;
 }
 .under-section1{
-  width: 25%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -193,12 +190,13 @@ nav li {
   margin: 0px 10%;
 }
 .unders2{
-  max-width: 255px;
+  max-width: 25%;
   position:relative;
   padding: 0 0 50px 0;
 }
 .unders2 img{
   box-shadow: 4px -4px 5px rgba(0, 0, 0, 0.281);
+  max-width: 100% ;
 }
 .unders2 h4{
 padding: 10px 0;}
@@ -222,24 +220,32 @@ padding: 10px 0;}
 }
 footer{
   background: #ffff;
+
 }
 .top-footer {
   margin: 40px 10%;
   display: flex;
   justify-content: space-around;
   padding: 30px 0;
+  position: relative;
 }
-
-.utop-footer h5{
-  font-size: 1rem;
-  text-transform: uppercase;
-  padding: 0 0 20px 0;
+.top-footer::after{
+  content: "";
+  position: absolute;
+  width: 70%;
+  border-bottom: solid 2px lightgray;
+  bottom: 0px;
 }
 .flex{
   display:flex;
 }
 .utop-footer {
-  max-width: 200px;
+  max-width: 25%;
+}
+.utop-footer h5{
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0 0 20px 0;
 }
 .utop-footer a{
   text-decoration: none;
@@ -289,7 +295,9 @@ padding: 10px 0;
   display:flex;
   justify-content: space-around;
 }
-
+.rm-footer div img{
+  max-width: 100%;
+}
 .end-footer{
   background: black;
   padding: 0 10% ;
@@ -305,4 +313,166 @@ padding: 10px 0;
 .end-footer div{
   justify-content: space-around;
   padding: 0 0 40px 0 ;
+}
+.end-footer div img {
+  max-width: 10%;
+  height: 20px;
+}
+@media (max-width : 1310px) {
+  .under-section1 h3{
+    font-size: 0.9rem;
+  }
+}
+@media (max-width : 1200px) {
+  nav ul{
+    margin: 0 7.5%;
+  }
+  nav li {
+    font-size: 0.7rem;
+  }
+  .last{
+    font-size: 0.7rem;
+  }
+  .under-section1 h3{
+    font-size: 0.75rem;
+  }
+  .under-section1 p{
+    font-size: 0.65rem;
+  }
+}
+@media (max-width : 1000px) {
+  nav ul{
+    margin: 0 5%;
+  }
+  nav li {
+    font-size: 0.6rem;
+  }
+  .last{
+    font-size: 0.6rem;
+  }
+  .top h1 {
+    font-size: 1.25rem;
+  }
+  .button-1{
+    padding: 10px 2%;
+    font-size: 0.85rem;
+  }
+  .head-1 p{
+    font-size: 0.85rem;
+  }
+  .section1 {
+    font-size: 0.65rem;
+    padding: 0 7.5% 30px 7.5%;
+  }
+  .section2{
+    padding: 50px 5%;
+  }
+  .section2 h2 {
+    font-size: 1rem;
+  }
+  .section2 > div {
+    font-size: 0.75rem;
+  } 
+  .section2 a div{
+    padding: 5px;
+  }
+  .section2 a div .fas{
+    font-size: 0.60rem;
+    padding: 0 0 0 5px; 
+  }
+  
+  .btnnews span{
+    font-size: 0.60rem;
+  }
+  .unders2 h4{
+    font-size: 0.75rem;
+  }
+  .unders2 p{
+    font-size: 0.65rem;
+  }
+  .unders2 a div {
+    font-size: 0.65rem;
+  }
+
+  .end-footer{
+    padding: 0 5%;
+  }
+  .utop-footer h5{
+    font-size: 0.75rem;
+    padding: 0 0 10px 0;
+  }
+  .utop-footer a{
+    font-size: 0.65rem;
+  }
+  .utop-footer a div{
+    padding: 5px 0;
+  }
+  .utop-footer p {
+    font-size: 0.65rem;
+  }
+  .utop-footer div{
+    font-size: 0.65rem;
+  }
+  .utop-footer div i{
+    font-size: 0.65rem;
+  } 
+}
+@media (max-width : 600px) {
+  nav {
+    height: 0;
+    overflow: hidden;
+  }
+  .top h1{
+    width: 80%;
+    font-size: 1.25rem;
+    text-align: center; 
+  }
+  .section1{
+    flex-direction: column;
+  }
+  .under-section1{
+    width: 80%;
+  }
+  .under-section1 h3{
+    font-size: 1.25rem;
+  }
+  .under-section1 p{
+    font-size: 1rem;
+  }
+  .under-section1 .button-1{
+    padding: 10px;
+  }
+  .section2{
+    flex-direction: column;
+    align-items: center;
+  }
+  .section2 h2{
+    font-size: .75rem;
+  }
+  .activities{
+    font-size: 0.60rem;
+  }
+  .section2 a {
+    margin: 10px 0;
+  }
+  .usection2 {
+    flex-direction:column;
+    align-items: center;
+  }
+  .unders2{
+    max-width: 80%;
+    margin: 10px;
+  }
+  .top-footer{
+    margin: 0;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .mid-footer{
+    margin: 0;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+  }
 }
